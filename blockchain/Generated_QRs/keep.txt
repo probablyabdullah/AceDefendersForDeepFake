@@ -1,3 +1,0 @@
-"""Easter egg"""
-🎉🎉🎉
-you may delete this file 
