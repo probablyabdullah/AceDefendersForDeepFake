@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fake News Detector</title>
+    <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="../images/icon16.png" alt="logo">
+            <h2>Fake News Detector</h2>
+        </header>
+        <div class="settings">
+            <div class="setting">
+                <span>Auto Screen</span>
+                <label class="switch" for="autoScreenCheckbox">
+                    <input type="checkbox" id="autoScreenCheckbox" class="checkbox" />
+                    <div class="slider round"></div>
+                </label>
+            </div>
+            <div class="setting">
+                <span>Include Images</span>
+                <label class="switch" for="includeImagesCheckbox">
+                    <input type="checkbox" id="includeImagesCheckbox" class="checkbox" />
+                    <div class="slider round"></div>
+                </label>
+            </div>
+            <div class="setting">
+                <span>Include Videos</span>
+                <label class="switch" for="includeVideosCheckbox">
+                    <input type="checkbox" id="includeVideosCheckbox" class="checkbox" />
+                    <div class="slider round"></div>
+                </label>
+            </div>
+        </div>
+        <hr class="divider">
+        <button id="checkButton" class="button">Check This Page</button>
+        <div class="result-section">
+            <div id="resultIcon" class="result-icon"></div>
+            <div id="output" class="result-text"></div>
+        </div>
+    </div>
+    <script src="popup.js"></script>
+</body>
+</html>
